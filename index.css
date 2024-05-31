@@ -1,0 +1,185 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background: radial-gradient(circle at top left, #652CD1, #000);
+}
+
+#form-container{
+    display: block;
+    background-color:#1b1b32;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    text-align: center;
+    width: 300px;
+}
+
+#form-container h2{
+    margin-bottom: 20px;
+    color:#f0f0f0;
+    display: flex;
+   padding-left: 10px;
+}
+
+.form-group{
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-group label{
+   display: flex;
+   margin-bottom: 5px;
+   font-size: 16px;
+   color: #b0b0b0;
+   padding-left:10px; 
+}
+
+input{
+    width: 80%;
+    padding:10px;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius:10px;
+    color: #f0f0f0;
+}
+
+.form-group input::placeholder {
+    color: rgb(37, 211, 214);
+}
+
+button{
+    width: 40%;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #652CD1;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+button:hover{
+    background-color: #4b21a8;
+}
+
+.container{
+    display: none;
+    height: 270px;
+    background-color:#1b1b32;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+
+}
+
+.container1{
+    display: none;
+    height: 270px;
+    background-color:#1b1b32;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+
+}
+.option1{
+    background-color: #A1A1A9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border-radius: 10px;
+    height: 30px;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+.option2{
+    background-color: #A1A1A9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border-radius: 10px;
+    height: 30px;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+
+.option3{
+    background-color: #A1A1A9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px 10px 20px;
+    border-radius: 10px;
+    height: 30px;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+#optionButton{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.option1:hover{
+    background-color: white;
+}
+
+.option2:hover{
+    background-color: white;
+}
+
+.option3:hover{
+    background-color: white;
+}
+
+
+.values{
+    display: flex;
+    margin-left: 20px;
+}
+
+#name{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: #b0b0b0;
+}
+
+
+#email{
+    color: #b0b0b0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#topic{
+    color: #b0b0b0;
+    width: 100%;
+}
+
+#topicValue{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.active{
+    display: block;
+}
+
+.notActive{
+    display: none;
+}

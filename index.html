@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="form-container" class="active">
+      <form id="formName">
+        <h2>Register</h2>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="email"
+            placeholder="example@gmail.com"
+            required
+          />
+        </div>
+        <button id="form-button" onclick="showSummary()">
+          Continue
+        </button>
+      </form>
+    </div>
+    <div class="container" id="container">
+      <h2>Which topics you are interested in?</h2>
+      <div class="option1" data-value="Software Development">
+        Software Development
+      </div>
+      <div class="option2" data-value="User Experience">
+        User Experience
+      </div>
+      <div class="option3" data-value="Graphic Design">
+        Graphic Design
+      </div>
+      <div id="optionButton">
+        <button id="optionButtonId" onclick="showSummaryDiv()">Continue</button>
+      </div>
+    </div>
+    <div class="container1" id="container1">
+      <h2>Summary</h2>
+      <div class="values">
+        <span id="name">Name:</span>
+        <div id="nameValue">Himanshu Rawat</div>
+      </div>
+      <div class="values">
+        <span id="email">Email:</span>
+        <div id="emailValue">hrawat016@gmail.com</div>
+      </div>
+      <div id="topic">Topics:</div>
+      <div id="topicValue">Graphic Design</div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
