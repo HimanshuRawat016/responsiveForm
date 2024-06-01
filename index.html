@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration form</title>
     <link rel="stylesheet" href="./index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
   <body>
     <div id="form-container" class="active">
@@ -30,20 +31,20 @@
             required
           />
         </div>
-        <button id="form-button" onclick="showSummary()">
-          Continue
-        </button>
       </form>
+      <button id="form-button" onclick="showSummary()">
+        Continue
+      </button>
     </div>
     <div class="container" id="container">
       <h2>Which topics you are interested in?</h2>
-      <div class="option1" data-value="Software Development">
+      <div id="software-development" class="option1">
         Software Development
       </div>
-      <div class="option2" data-value="User Experience">
+      <div id="user-experience" class="option2">
         User Experience
       </div>
-      <div class="option3" data-value="Graphic Design">
+      <div id="graphic-design" class="option3">
         Graphic Design
       </div>
       <div id="optionButton">
@@ -61,7 +62,7 @@
         <div id="emailValue">hrawat016@gmail.com</div>
       </div>
       <div id="topic">Topics:</div>
-      <div id="topicValue">Graphic Design</div>
+      <div id="topicValue"></div>
     </div>
     <script src="index.js"></script>
   </body>
